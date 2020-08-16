@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="40sp"
+        android:ellipsize="start"
+        android:textColor="@color/numberButton"
+        android:gravity="end"
+        android:singleLine="true" />
+
+    <TextView
+        android:ellipsize="start"
+        android:singleLine="true"
+        android:id="@+id/tvResult"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="@color/numberButton"
+        android:gravity="end"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/symbolStyle"
+                android:text="CE"
+                android:id="@+id/tvClear" />
+
+            <TextView
+                style="@style/symbolStyle"
+                android:text="("
+                android:id="@+id/tvBracket" />
+
+            <TextView
+                style="@style/symbolStyle"
+                android:text=")"
+                android:id="@+id/tvEndBracket" />
+
+            <TextView
+                style="@style/symbolStyle"
+                android:text="/"
+                android:id="@+id/tvDivision" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/numberStyles"
+                android:text="7"
+                android:id="@+id/tvSeven" />
+
+            <TextView
+                style="@style/numberStyles"
+                android:text="8"
+                android:id="@+id/tvEight" />
+
+            <TextView
+                style="@style/numberStyles"
+                android:text="9"
+                android:id="@+id/tvNine" />
+
+            <TextView
+                style="@style/symbolStyle"
+                android:text="*"
+                android:id="@+id/tvMultiply" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/numberStyles"
+                android:text="4"
+                android:id="@+id/tvFour" />
+
+            <TextView
+                style="@style/numberStyles"
+                android:text="5"
+                android:id="@+id/tvFive" />
+
+            <TextView
+                style="@style/numberStyles"
+                android:text="6"
+                android:id="@+id/tvSix" />
+
+            <TextView
+                style="@style/symbolStyle"
+                android:text="-"
+                android:id="@+id/tvMinus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/numberStyles"
+                android:text="1"
+                android:id="@+id/tvOne" />
+
+            <TextView
+                style="@style/numberStyles"
+                android:text="2"
+                android:id="@+id/tvTwo" />
+
+            <TextView
+                style="@style/numberStyles"
+                android:text="3"
+                android:id="@+id/tvThree" />
+
+            <TextView
+                style="@style/symbolStyle"
+                android:text="+"
+                android:id="@+id/tvPlus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/numberStyles"
+                android:text="."
+                android:id="@+id/tvDot" />
+
+            <TextView
+                style="@style/numberStyles"
+                android:text="0"
+                android:id="@+id/tvZero" />
+
+            <ImageView
+                style="@style/numberStyles"
+                android:src="@drawable/backspace"
+                android:scaleType="center"
+                android:id="@+id/tvBack" />
+
+            <TextView
+                style="@style/symbolStyle"
+                android:text="="
+                android:id="@+id/tvEqual" />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
