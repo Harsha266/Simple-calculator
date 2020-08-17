@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
             }catch (e:Exception){
-                Toast.makeText(this, "InValid Expression", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "Invalid Expression", Toast.LENGTH_SHORT).show()
             }
         }
 
